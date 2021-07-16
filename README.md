@@ -32,3 +32,8 @@ This quickstart works with `apollo-server-azure-functions` v2 only.
         --data-raw '{"query":"{\n  hello\n}\n"}' 
     ```
 3. View response `{"data":{"hello":"Hello from GraphQL backend"}}`
+
+### Deploy to Azure
+
+1. In VS Code, create the Azure Function resource.
+2. Deploy the root folder to your resource. Do not select the `/dist` folder. It will be created as part of the build process.
