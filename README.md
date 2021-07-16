@@ -29,7 +29,7 @@ This quickstart works with `apollo-server-azure-functions` v2 only.
     ```bash
     curl 'http://localhost:7071/api/graphql' \
         -H 'content-type: application/json' \
-        --data-raw '{"query":"{\n  hello\n}\n"}' 
+        --data-raw '{"query":"{hello}"}' 
     ```
 3. View response `{"data":{"hello":"Hello from GraphQL backend"}}`
 
