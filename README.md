@@ -1,57 +1,21 @@
-# Project Name
+# GraphQL TypeScript Hello World
 
-(short, 1-3 sentenced, description of the project)
-
-## Features
-
-This project framework provides the following features:
-
-* Feature 1
-* Feature 2
-* ...
+A simple hello world example using GraphQL TypeScript using Apollo server.
 
 ## Getting Started
 
-### Prerequisites
-
-(ideally very short, if any)
-
-- OS
-- Library version
-- ...
-
 ### Installation
 
-(ideally very short)
+- npm install 
+- npm start
 
-- npm install [package name]
-- mvn install
-- ...
+This quickstart works with `apollo-server-azure-functions` v2 only.
 
-### Quickstart
-(Add steps to get up and running quickly)
+### Quickstart using GraphQL Playground
 
-1. git clone [repository clone url]
-2. cd [respository name]
-3. ...
+1. Open browser to `http://localhost:7071/api/graphql`
+2. Enter query `{hello}`
 
+    ![](./media/graphql_playground.png)
 
-## Demo
-
-A demo app is included to show how to use the project.
-
-To run the demo, follow these steps:
-
-(Add steps to start up the demo)
-
-1.
-2.
-3.
-
-## Resources
-
-(Any additional resources or related projects)
-
-- Link to supporting information
-- Link to similar sample
-- ...
+3. View response `{"data":{"hello":"Hello from GraphQL backend"}}`
