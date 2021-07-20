@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "apollo-server-azure-functions": "^2.20.0",
-    "graphql": "^15.5.1"
+    "graphql": "^15.5.1",
+    "uuidv4": "^6.2.11"
   }
 }
