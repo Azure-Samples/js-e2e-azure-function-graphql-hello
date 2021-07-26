@@ -1,3 +1,17 @@
+---
+page_type: sample
+languages:
+- javascript
+- typescript
+- nodejs
+name: "Azure Function GraphQL TypeScript Hello World"
+description: "A simple hello world example using GraphQL TypeScript using Apollo server."
+products:
+- azure
+- azure-functions
+- vs-code
+---
+
 # GraphQL TypeScript Hello World
 
 A simple hello world example using GraphQL TypeScript using Apollo server.
