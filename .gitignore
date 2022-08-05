@@ -354,3 +354,5 @@ MigrationBackup/
 # Azurite
 azurite
 __azurite_*
+__blobstorage__
+__queuestorage__
