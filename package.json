@@ -6,8 +6,10 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc --w",
+    "local-storage": "azurite --silent --location azurite --debug azurite/debug.log",
     "prestart": "npm run build",
-    "start": "func start"
+    "start:local": "npm run local-storage && func start",
+    "start": "npm run local-storage && func start"
   },
   "keywords": [],
   "author": "",

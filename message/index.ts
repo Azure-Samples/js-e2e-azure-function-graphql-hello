@@ -78,7 +78,7 @@ const resolvers = {
     }
 };
 // @ts-ignore
-const server = new ApolloServer({ typeDefs, resolvers, playground: true});
+const server = new ApolloServer({ typeDefs, resolvers, debug: true,playground: true});
 
 export default server.createHandler({
   cors: {
