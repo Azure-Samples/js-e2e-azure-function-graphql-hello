@@ -1,7 +1,7 @@
 import { ApolloServer, gql} from "apollo-server-azure-functions";
-import { uuid } from 'uuidv4';
+import { v4 as uuidv4 } from 'uuid';
 
-const database = { [uuid()] :{"author": "dina", "content": "good morning"} };
+const database = { [uuidv4()] :{"author": "dina", "content": "good morning"} };
 
 const typeDefs = gql`
     input MessageInput {
@@ -42,7 +42,7 @@ class Message {
 const resolvers = {
     Mutation: {
         createMessage: (_, {input}) => {
-            const id = uuid();
+            const id = uuidv4();
 
             database[id] = input;
             return new Message(id, input);
