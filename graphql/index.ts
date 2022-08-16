@@ -13,11 +13,18 @@ const resolvers = {
     hello: () => "Hello from our GraphQL backend!",
   },
 };
+
 // @ts-ignore
-const server = new ApolloServer({ typeDefs, resolvers, debug: true,playground: true});
+const server = new ApolloServer({
+  typeDefs,
+  resolvers,
+  debug: true
+});
 
 export default server.createHandler({
   cors: {
-    origin: '*'
+    origin: ['*', "https://studio.apollographql.com"],
+    methods: ["GET", "POST"],
+    allowedHeaders: ["access-control-allow-credentials", "access-control-allow-origin", "content-type"]
   },
 });

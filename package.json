@@ -8,7 +8,7 @@
     "watch": "tsc --w",
     "local-storage": "azurite --silent --location azurite --debug azurite/debug.log",
     "prestart": "npm run build",
-    "start:local": "concurrently \"npm run local-storage\" \"func start\""
+    "start:local": "concurrently \"npm run local-storage\" \"func start\"",
     "start": "func start"
   },
   "keywords": [],
@@ -24,6 +24,6 @@
   "devDependencies": {
     "azurite": "^3.18.0",
     "concurrently": "^7.3.0",
-    "typescript": "^4.7.4",
+    "typescript": "^4.7.4"
   }
 }
