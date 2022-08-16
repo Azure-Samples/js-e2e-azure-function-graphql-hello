@@ -51,3 +51,12 @@ This quickstart works with `apollo-server-azure-functions` v2 only.
 
 1. In VS Code, create the Azure Function resource.
 2. Deploy the root folder to your resource. Do not select the `/dist` folder. It will be created as part of the build process.
+
+### Use playground with deployed function
+
+1. Configure the **CORS** setting for the Apollo playground: `https://studio.apollographql.com`.
+2. If you still get **CORS** errors when running the query in the playground, use the `diagnose-endpoint` package to determine the issue: 
+
+    ```
+    npx diagnose-endpoint@1.1.0 --endpoint=https://YOUR-FUNCTION-NAME.azurewebsites.net/api/graphql/
+    ```
