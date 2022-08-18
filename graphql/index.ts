@@ -24,7 +24,7 @@ const server = new ApolloServer({
 export default server.createHandler({
   cors: {
     origin: ['*', "https://studio.apollographql.com"],
-    methods: ["GET", "POST"],
+    methods: ["GET", "POST", "OPTIONS"],
     allowedHeaders: ["access-control-allow-credentials", "access-control-allow-origin", "content-type"]
   },
 });
