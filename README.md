@@ -60,3 +60,9 @@ This quickstart works with `apollo-server-azure-functions` v2 only.
     ```
     npx diagnose-endpoint@1.1.0 --endpoint=https://YOUR-FUNCTION-NAME.azurewebsites.net/api/graphql/
     ```
+
+## Local development troubleshooting
+
+### MacOS M1 in a container
+
+* See azure-functions-core-tools issue [2834](https://github.com/Azure/azure-functions-core-tools/issues/2834)
