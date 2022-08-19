@@ -9,4 +9,4 @@ FROM mcr.microsoft.com/azure-functions/node:4-node${VARIANT}-core-tools
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 
 # [Optional] Uncomment if you want to install more global node packages
-RUN sudo -u node npm install -g azurite
+#RUN sudo -u node npm install -g <your-package-list-here>

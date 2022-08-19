@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "time": "date",
+    "build": "npm run time && tsc",
     "watch": "tsc --w",
     "local-storage": "azurite --silent --location azurite --debug azurite/debug.log",
     "prestart": "npm run build",
-    "start:local": "concurrently \"npm run local-storage\" \"func start\"",
+    "start:local": "npm run build && concurrently \"npm run local-storage\" \"func start\"",
     "start": "func start"
   },
   "keywords": [],
@@ -17,7 +18,6 @@
   "dependencies": {
     "@azure/functions": "^3.2.0",
     "apollo-server-azure-functions": "^3.10.1",
-    "azure-functions-core-tools": "^4.0.4704",
     "graphql": "^16.5.0",
     "uuid": "^8.3.2"
   },

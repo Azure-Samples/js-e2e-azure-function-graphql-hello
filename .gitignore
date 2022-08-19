@@ -351,8 +351,14 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 
+#TypeScript Build
+dist
+
 # Azurite
 azurite
 __azurite_*
 __blobstorage__
 __queuestorage__
+
+# MacOS
+.DS_Store
